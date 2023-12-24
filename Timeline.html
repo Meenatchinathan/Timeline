@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Life Timeline</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+        background-image: url(background2.jpg);
+        background-repeat: no-repeat;
+        background-size: 2700px;
+        font-family: 'Times New Roman', Times, serif;
+    }
+    .timeline {
+     
+      position: relative;
+      max-width: 500px;
+      margin-left: 950px;
+      max-height: 50px;
+    }
+    .event {
+      position: relative;
+      margin: 20px 0;
+      padding: 20px;
+      background: wheat;
+      color:black ;
+      border-radius: 5px;
+      display: none;
+      border: 8px silver solid;
+    }
+  </style>
+</head>
+<body>
+    
+  <div class="timeline">
+    <div class="event">
+      <h3 style="color: brown;">2003</h3>
+      <p>My life journey began on <u>27th November, 2003 </u></p>
+    </div>
+    <div class="event">
+      <h3 style="color: brown;">2006</h3>
+      <p>I started my educational journey in 2006 by joining the school in my hometown.</u></p>
+    </div>
+    <div class="event">
+      <h3 style="color: brown;">2015</h3>
+      <p>Not only in studies, I have intrested in sports and won the zonel level volleyball tournament and selected for district level volleyball tournament in my district..</u></p>
+    </div>
+    <div class="event">
+      <h3 style="color: brown;">2016</h3>
+      <p>In addition to volleyball, participated in district level chess tournament and badminton tournament as well!</p>
+    </div>
+    <div class="event">
+      <h3 style="color: brown;">2018-2019</h3>
+      <p>Completed S.S.L.C with 97% marks</p>
+    </div>
+    <div class="event">
+      <h3 style="color: brown;">2019-2020</h3>
+      <p>Completed H.S.C with 95% marks</p>
+    </div>
+    <div class="event">
+      <h3 style="color: brown;">2021</h3>
+      <p>Joined Vellore Institute of technology for my higher studies in Integrated M.Tech Engineering with specialization in Data Science and looking forward for more oppurtunities!</p>
+    </div>
+    
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      var events = $('.event');
+
+      events.each(function(index) {
+        $(this).delay(500 * index).fadeIn(5000);
+      });
+    });
+  </script>
+</body>
+</html>
